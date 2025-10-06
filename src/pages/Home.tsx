@@ -1,30 +1,30 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Users, Heart, Sparkles, ArrowRight } from "lucide-react";
+import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircle, Star, Target, GraduationCap } from "lucide-react";
 import heroImage from "@/assets/hero-children.jpg";
 
 const Home = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Beyond the Books",
-      description: "Holistic development through play-based learning and creative exploration.",
+      title: "Holistic Development",
+      description: "Fostering all-round development through a balanced blend of academics, play, and life skills.",
     },
     {
       icon: Users,
-      title: "Expert Teachers",
-      description: "Experienced and caring educators dedicated to your child's growth.",
+      title: "Expert Educators",
+      description: "Skilled teachers dedicated to nurturing every child's unique potential.",
     },
     {
-      icon: Heart,
-      title: "Nurturing Environment",
-      description: "A safe, loving space where every child feels valued and supported.",
+      icon: Shield,
+      title: "Safe & Secure",
+      description: "A protected, child-friendly environment ensuring safety and peace of mind.",
     },
     {
       icon: Sparkles,
-      title: "Creative Learning",
-      description: "Engaging activities that spark curiosity and imagination.",
+      title: "Innovative Learning",
+      description: "Engaging, modern teaching methods that make learning fun and impactful.",
     },
   ];
 
@@ -34,24 +34,69 @@ const Home = () => {
       age: "2-3 Years",
       path: "/services/playgroup",
       color: "bg-primary/10",
+      description: "Sensory play and exploration for toddlers"
     },
     {
       name: "Nursery",
       age: "3-4 Years",
       path: "/services/nursery",
       color: "bg-secondary/10",
+      description: "Building foundations for learning"
     },
     {
       name: "Junior KG",
       age: "4-5 Years",
       path: "/services/junior-kg",
       color: "bg-accent/10",
+      description: "Academic learning begins"
     },
     {
       name: "Senior KG",
       age: "5-6 Years",
       path: "/services/senior-kg",
       color: "bg-primary/10",
+      description: "Complete school readiness preparation"
+    },
+  ];
+
+  const whyChooseUs = [
+    {
+      icon: Heart,
+      title: "Child-Centric Approach",
+      description: "Every program is designed around the child's natural curiosity and developmental needs"
+    },
+    {
+      icon: GraduationCap,
+      title: "Proven Methodology",
+      description: "Research-backed teaching methods that have helped hundreds of children thrive"
+    },
+    {
+      icon: Users,
+      title: "Individual Attention",
+      description: "Small class sizes ensure personalized care and customized learning experiences"
+    },
+    {
+      icon: Target,
+      title: "Balanced Curriculum",
+      description: "Perfect blend of academics, creativity, physical development, and character building"
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: "Priya & Rahul Sharma",
+      child: "Aarav (Nursery)",
+      quote: "Silver Hoofs has been amazing for our daughter. The teachers are so caring and the curriculum is perfect for her age. She looks forward to school every single day!"
+    },
+    {
+      name: "Anjali & Vikram Patel",
+      child: "Diya (Junior KG)",
+      quote: "We are so grateful to have found Silver Hoofs. The individual attention and safe environment give us complete peace of mind. Our son has grown so much!"
+    },
+    {
+      name: "Neha & Arjun Reddy",
+      child: "Ishaan (Senior KG)",
+      quote: "The holistic approach at Silver Hoofs is exactly what we were looking for. They focus on academics while nurturing creativity and social skills too."
     },
   ];
 
@@ -63,12 +108,15 @@ const Home = () => {
         <div className="container mx-auto px-4 py-20 lg:py-32 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
+                Building Foundations for Lifetime Learning
+              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Where Learning Meets{" "}
                 <span className="text-primary">Joy</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Welcome to Silver Hoofs Pre-School - nurturing young minds through play, creativity, and love. Beyond the books, we help children discover their potential.
+                Welcome to Silver Hoofs Pre-School - nurturing young minds through play, creativity, and love. Beyond the books, we help children discover their potential and build the foundation for a lifetime of learning.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
@@ -87,7 +135,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
               <img
                 src={heroImage}
-                alt="Happy children learning"
+                alt="Happy children learning at Silver Hoofs Pre-School"
                 className="relative rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>
@@ -95,30 +143,48 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-muted/30">
+      {/* About Preview Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12 space-y-4">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              About Silver Hoofs Pre-School
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              At Silver Hoofs, we believe that early childhood is the foundation for a lifetime of learning. Our child-centric approach focuses on nurturing the whole child - intellectually, socially, emotionally, and physically. With experienced educators, a warm environment, and a comprehensive curriculum, we create the perfect setting for your child's first educational experience.
+            </p>
+            <Link to="/about">
+              <Button variant="outline" size="lg" className="rounded-full">
+                Discover Our Story
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/5 to-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Why Choose Silver Hoofs?
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We believe in nurturing the whole child - mind, body, and heart.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Silver Hoofs stands out as the preferred choice for parents seeking exceptional early education for their little ones
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <Card
                 key={index}
                 className="border-2 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                <CardContent className="p-6 space-y-4">
-                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                <CardContent className="p-6 text-center space-y-4">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <feature.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-lg text-foreground">
-                    {feature.title}
-                  </h3>
+                  <h3 className="font-bold text-lg">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">
                     {feature.description}
                   </p>
@@ -137,7 +203,7 @@ const Home = () => {
               Our Programs
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Age-appropriate learning programs designed to help your child thrive.
+              Age-appropriate learning programs designed to help your child thrive at every stage of development
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -152,7 +218,8 @@ const Home = () => {
                       <h3 className="font-bold text-xl text-foreground mb-2">
                         {program.name}
                       </h3>
-                      <p className="text-muted-foreground mb-4">{program.age}</p>
+                      <p className="text-primary font-medium mb-2">{program.age}</p>
+                      <p className="text-muted-foreground text-sm mb-4">{program.description}</p>
                       <div className="flex items-center text-primary font-medium group-hover:gap-2 transition-all">
                         <span>Learn More</span>
                         <ArrowRight className="h-4 w-4" />
@@ -166,17 +233,106 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Our Approach Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Our Teaching Philosophy
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                At Silver Hoofs, we embrace a play-based, child-centric philosophy that recognizes each child as a unique individual. We believe that children learn best when they are actively engaged, exploring, and discovering in a supportive environment.
+              </p>
+              <div className="space-y-4">
+                {whyChooseUs.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                      <item.icon className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-1">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <Link to="/about">
+                <Button size="lg" variant="outline" className="rounded-full">
+                  Learn More About Us
+                </Button>
+              </Link>
+            </div>
+            <div className="relative">
+              <Card className="border-2">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <div className="text-center p-6 bg-primary/5 rounded-2xl">
+                      <div className="text-4xl font-bold text-primary mb-2">20+</div>
+                      <p className="text-sm text-muted-foreground">Years of Combined Teaching Experience</p>
+                    </div>
+                    <div className="text-center p-6 bg-secondary/5 rounded-2xl">
+                      <div className="text-4xl font-bold text-secondary mb-2">500+</div>
+                      <p className="text-sm text-muted-foreground">Happy Children Educated</p>
+                    </div>
+                    <div className="text-center p-6 bg-accent/5 rounded-2xl">
+                      <div className="text-4xl font-bold text-accent mb-2">100%</div>
+                      <p className="text-sm text-muted-foreground">Parent Satisfaction Rate</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              What Parents Say About Us
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Hear from our happy parents about their experience with Silver Hoofs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-2">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex space-x-1 text-primary">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="pt-4 border-t">
+                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">Parents of {testimonial.child}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to Start Your Child's Journey?
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4 text-center space-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Begin Your Child's Learning Journey Today
           </h2>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Join the Silver Hoofs family and give your child the foundation for a bright future.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Join the Silver Hoofs family and give your child the foundation for a lifetime of success. Schedule a visit to see our facilities and meet our teachers.
           </p>
           <Link to="/contact">
-            <Button size="lg" variant="secondary" className="rounded-full">
+            <Button size="lg" className="rounded-full text-lg px-8">
               Schedule a Visit
             </Button>
           </Link>
