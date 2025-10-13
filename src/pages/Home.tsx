@@ -132,6 +132,36 @@ const Home = () => {
       title: "STEM Learning Areas",
       description: "Science and math exploration zones with interactive materials"
     },
+    {
+      src: "/images/classroom 7 potrait.jpg",
+      title: "Music & Movement Spaces",
+      description: "Areas dedicated to rhythmic activities and musical exploration"
+    },
+    {
+      src: "/images/classroom 8 potrait.jpg",
+      title: "Technology Integration",
+      description: "Modern learning tools blended with traditional teaching methods"
+    },
+    {
+      src: "/images/classroom 9 potrait.jpg",
+      title: "Sensory Play Zones",
+      description: "Specialized areas for tactile and sensory development activities"
+    },
+    {
+      src: "/images/classroom 10 potrait.jpg",
+      title: "Language Development Centers",
+      description: "Literacy-rich environments promoting communication skills"
+    },
+    {
+      src: "/images/classroom 11 potrait.jpg",
+      title: "Math Discovery Areas",
+      description: "Hands-on materials for early numeracy and problem-solving"
+    },
+    {
+      src: "/images/classroom 12 potrait.jpg",
+      title: "Science Exploration Stations",
+      description: "Safe experiments and discovery activities for young scientists"
+    },
   ];
 
   const playAreaImages = [
@@ -194,9 +224,34 @@ const Home = () => {
       description: "Updated notice boards keeping families informed and connected"
     },
     {
+      src: "/images/notice board 2 landscape.jpg",
+      title: "Weekly Updates",
+      description: "Regular information sharing about activities and events"
+    },
+    {
+      src: "/images/notice board 3 landscape.jpg",
+      title: "Learning Showcases",
+      description: "Displaying children's achievements and creative work"
+    },
+    {
+      src: "/images/notice board 4 landscape.jpg",
+      title: "Community Connection",
+      description: "Building a strong school-family partnership through communication"
+    },
+    {
       src: "/images/I care.jpg",
       title: "Caring Environment",
       description: "A nurturing atmosphere where every child feels valued and loved"
+    },
+    {
+      src: "/images/IMG-20251007-WA0033.jpg",
+      title: "Daily Activities",
+      description: "Engaging programs that make every day exciting and educational"
+    },
+    {
+      src: "/images/IMG-20251007-WA0034.jpg",
+      title: "Learning in Action",
+      description: "Children actively participating in structured educational activities"
     },
   ];
 
