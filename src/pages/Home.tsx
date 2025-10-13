@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircle, Star, Target, GraduationCap } from "lucide-react";
 import heroImage from "@/assets/hero-children.jpg";
+import ImageMarquee from "@/components/ImageMarquee";
 
 const Home = () => {
   const features = [
@@ -97,6 +98,105 @@ const Home = () => {
       name: "Neha & Arjun Reddy",
       child: "Ishaan (Senior KG)",
       quote: "The holistic approach at Silver Hoofs is exactly what we were looking for. They focus on academics while nurturing creativity and social skills too."
+    },
+  ];
+
+  const classroomImages = [
+    {
+      src: "/images/Classroom 1 Portrait.jpg",
+      title: "Bright Learning Spaces",
+      description: "Colorful, well-lit classrooms designed to inspire curiosity and engagement"
+    },
+    {
+      src: "/images/classroom 2 portrait.jpg",
+      title: "Interactive Learning Zones",
+      description: "Activity corners equipped with educational materials for hands-on learning"
+    },
+    {
+      src: "/images/classroom 3 potrait.jpg",
+      title: "Age-Appropriate Setup",
+      description: "Furniture and resources sized perfectly for young learners"
+    },
+    {
+      src: "/images/classroom 4 portrait.jpg",
+      title: "Creative Art Stations",
+      description: "Dedicated spaces for artistic expression and creative development"
+    },
+    {
+      src: "/images/classroom 5 potrait.jpg",
+      title: "Reading Corners",
+      description: "Cozy spaces filled with age-appropriate books to foster love for reading"
+    },
+    {
+      src: "/images/classroom 6 potrait.jpg",
+      title: "STEM Learning Areas",
+      description: "Science and math exploration zones with interactive materials"
+    },
+  ];
+
+  const playAreaImages = [
+    {
+      src: "/images/play area 1 portrait.jpg",
+      title: "Outdoor Adventure Zone",
+      description: "Safe, secure outdoor play areas for physical development and fun"
+    },
+    {
+      src: "/images/play area 2 portrait.jpg",
+      title: "Indoor Play Facilities",
+      description: "Climate-controlled play spaces for year-round active learning"
+    },
+    {
+      src: "/images/Play area 3 portrait.jpg",
+      title: "Motor Skills Development",
+      description: "Equipment designed to build strength, balance, and coordination"
+    },
+    {
+      src: "/images/inside Play area portrait.jpg",
+      title: "Imaginative Play Corners",
+      description: "Themed play areas that encourage creativity and role-playing"
+    },
+    {
+      src: "/images/playing 1 landscape.jpg",
+      title: "Group Activity Spaces",
+      description: "Open areas for collaborative games and social interaction"
+    },
+    {
+      src: "/images/playing 2 portrait.jpg",
+      title: "Active Learning Zones",
+      description: "Play-based learning areas that make education fun and engaging"
+    },
+  ];
+
+  const facilitiesImages = [
+    {
+      src: "/images/reception landscape.jpg",
+      title: "Welcoming Reception",
+      description: "Friendly front desk with caring staff to greet families every day"
+    },
+    {
+      src: "/images/office 1 Portrait.jpg",
+      title: "Administrative Office",
+      description: "Professional staff dedicated to supporting your child's journey"
+    },
+    {
+      src: "/images/Out doors portait.jpg",
+      title: "Green Outdoor Spaces",
+      description: "Natural environment for outdoor learning and exploration"
+    },
+    {
+      src: "/images/outdoors 2 portrait.jpg",
+      title: "Safe Play Grounds",
+      description: "Secure outdoor areas monitored for safety and enjoyment"
+    },
+    {
+      src: "/images/notice board 1 landscape.jpg",
+      title: "Parent Communication",
+      description: "Updated notice boards keeping families informed and connected"
+    },
+    {
+      src: "/images/I care.jpg",
+      title: "Caring Environment",
+      description: "A nurturing atmosphere where every child feels valued and loved"
     },
   ];
 
@@ -284,6 +384,51 @@ const Home = () => {
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Our Classrooms Gallery */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Our Learning Spaces
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Thoughtfully designed classrooms that inspire creativity, curiosity, and joyful learning
+            </p>
+          </div>
+          <ImageMarquee images={classroomImages} direction="left" speed="normal" />
+        </div>
+      </section>
+
+      {/* Play Areas Gallery */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Play & Activity Areas
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Safe, engaging spaces where children develop motor skills, social abilities, and confidence through play
+            </p>
+          </div>
+          <ImageMarquee images={playAreaImages} direction="right" speed="slow" />
+        </div>
+      </section>
+
+      {/* Facilities Gallery */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              World-Class Facilities
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Modern infrastructure and caring environment ensuring your child's safety, comfort, and growth
+            </p>
+          </div>
+          <ImageMarquee images={facilitiesImages} direction="left" speed="fast" />
         </div>
       </section>
 
