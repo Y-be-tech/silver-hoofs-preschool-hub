@@ -22,7 +22,7 @@ const ImageMarquee = ({ images, direction = "left", speed = "normal" }: ImageMar
   const directionClass = direction === "right" ? "reverse" : "";
 
   return (
-    <div className="relative overflow-hidden py-4">
+    <div className="relative overflow-x-auto py-4 scrollbar-hide cursor-grab active:cursor-grabbing">
       <div className={`flex gap-4 ${speedClass} ${directionClass}`}>
         {/* Duplicate images for seamless loop */}
         {[...images, ...images].map((image, index) => (
