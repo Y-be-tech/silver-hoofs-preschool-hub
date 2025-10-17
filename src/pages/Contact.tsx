@@ -50,70 +50,10 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="py-20">
+      {/* Lead Capture Form */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="border-2">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Contact number will be provided
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
-                  <Mail className="h-6 w-6 text-secondary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Email</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Email address will be provided
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Location</h3>
-                  <p className="text-muted-foreground text-sm">
-                    See map below for directions
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2">
-              <CardContent className="p-6 space-y-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Clock className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Hours</h3>
-                  <div className="text-muted-foreground text-sm space-y-1">
-                    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                    <p>Sat-Sun: 10:00 AM - 1:00 PM</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Lead Capture Form */}
-          <div className="max-w-2xl mx-auto mb-16">
+          <div className="max-w-2xl mx-auto">
             <Card className="border-2">
               <CardContent className="p-8">
                 <div className="mb-6">
@@ -185,6 +125,70 @@ const Contact = () => {
                     </Button>
                   </form>
                 </Form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <Card className="border-2">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Phone</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Contact number will be provided
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
+                  <Mail className="h-6 w-6 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Email</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Email address will be provided
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-accent" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Location</h3>
+                  <p className="text-muted-foreground text-sm">
+                    See map below for directions
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="p-6 space-y-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Hours</h3>
+                  <div className="text-muted-foreground text-sm space-y-1">
+                    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                    <p>Sat-Sun: 10:00 AM - 1:00 PM</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
