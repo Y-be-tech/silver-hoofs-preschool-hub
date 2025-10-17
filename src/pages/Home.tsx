@@ -162,6 +162,16 @@ const Home = () => {
       title: "Science Exploration Stations",
       description: "Safe experiments and discovery activities for young scientists"
     },
+    {
+      src: "/images/classroom 14 potrait.jpg",
+      title: "Collaborative Learning Spaces",
+      description: "Group work areas fostering teamwork and social skills"
+    },
+    {
+      src: "/images/classroom 15 potrait.jpg",
+      title: "Innovation Hub",
+      description: "Modern classrooms equipped with the latest educational resources"
+    },
   ];
 
   const playAreaImages = [
@@ -209,6 +219,11 @@ const Home = () => {
       description: "Professional staff dedicated to supporting your child's journey"
     },
     {
+      src: "/images/office 1 landscape.jpg",
+      title: "Well-Organized Administration",
+      description: "Efficient office spaces ensuring smooth daily operations"
+    },
+    {
       src: "/images/Out doors portait.jpg",
       title: "Green Outdoor Spaces",
       description: "Natural environment for outdoor learning and exploration"
@@ -237,6 +252,11 @@ const Home = () => {
       src: "/images/notice board 4 landscape.jpg",
       title: "Community Connection",
       description: "Building a strong school-family partnership through communication"
+    },
+    {
+      src: "/images/classroom 2 landscape.jpg",
+      title: "Spacious Learning Environment",
+      description: "Wide-angle view of our bright and welcoming classrooms"
     },
     {
       src: "/images/I care.jpg",
@@ -391,53 +411,31 @@ const Home = () => {
       {/* Our Approach Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                Our Teaching Philosophy
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                At Silver Hoofs, we embrace a play-based, child-centric philosophy that recognizes each child as a unique individual. We believe that children learn best when they are actively engaged, exploring, and discovering in a supportive environment.
-              </p>
-              <div className="space-y-4">
-                {whyChooseUs.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <item.icon className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
-                    </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Our Teaching Philosophy
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              At Silver Hoofs, we embrace a play-based, child-centric philosophy that recognizes each child as a unique individual. We believe that children learn best when they are actively engaged, exploring, and discovering in a supportive environment.
+            </p>
+            <div className="space-y-4 mb-8">
+              {whyChooseUs.map((item, index) => (
+                <div key={index} className="flex items-start space-x-3 justify-center">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <item.icon className="h-4 w-4 text-primary" />
                   </div>
-                ))}
-              </div>
-              <Link to="/about">
-                <Button size="lg" variant="outline" className="rounded-full">
-                  Learn More About Us
-                </Button>
-              </Link>
-            </div>
-            <div className="relative">
-              <Card className="border-2">
-                <CardContent className="p-8">
-                  <div className="space-y-6">
-                    <div className="text-center p-6 bg-primary/5 rounded-2xl">
-                      <div className="text-4xl font-bold text-primary mb-2">20+</div>
-                      <p className="text-sm text-muted-foreground">Years of Combined Teaching Experience</p>
-                    </div>
-                    <div className="text-center p-6 bg-secondary/5 rounded-2xl">
-                      <div className="text-4xl font-bold text-secondary mb-2">500+</div>
-                      <p className="text-sm text-muted-foreground">Happy Children Educated</p>
-                    </div>
-                    <div className="text-center p-6 bg-accent/5 rounded-2xl">
-                      <div className="text-4xl font-bold text-accent mb-2">100%</div>
-                      <p className="text-sm text-muted-foreground">Parent Satisfaction Rate</p>
-                    </div>
+                  <div className="text-left max-w-xs">
+                    <h3 className="font-semibold mb-1">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              ))}
             </div>
+            <Link to="/about">
+              <Button size="lg" variant="outline" className="rounded-full">
+                Learn More About Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
