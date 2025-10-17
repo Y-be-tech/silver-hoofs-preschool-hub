@@ -1,7 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { useToast } from "@/hooks/use-toast";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+
+const contactFormSchema = z.object({
+  name: z.string().trim().min(2, "Name must be at least 2 characters").max(100, "Name must be less than 100 characters"),
+  classLevel: z.string().min(1, "Please select a class"),
+  phoneNumber: z.string().trim().regex(/^[0-9]{10}$/, "Phone number must be 10 digits"),
+});
 
 const Contact = () => {
+  const { toast } = useToast();
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      classLevel: "",
+      phoneNumber: "",
+    },
+  });
+
+  const onSubmit = (data: z.infer<typeof contactFormSchema>) => {
+    console.log("Form submitted:", data);
+    toast({
+      title: "Thank you for your interest!",
+      description: "We'll contact you shortly to discuss enrollment.",
+    });
+    form.reset();
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -74,6 +108,83 @@ const Contact = () => {
                     <p>Sat-Sun: 10:00 AM - 1:00 PM</p>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Lead Capture Form */}
+          <div className="max-w-2xl mx-auto mb-16">
+            <Card className="border-2">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h2 className="text-2xl font-bold text-foreground mb-2">Enquire Now</h2>
+                  <p className="text-muted-foreground">
+                    Fill in your details and we'll get back to you soon
+                  </p>
+                </div>
+                <Form {...form}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Name *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Enter your name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="classLevel"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Class *</FormLabel>
+                          <Select onValueChange={field.onChange} value={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select a class" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="playgroup">Playgroup</SelectItem>
+                              <SelectItem value="nursery">Nursery</SelectItem>
+                              <SelectItem value="junior-kg">Junior KG</SelectItem>
+                              <SelectItem value="senior-kg">Senior KG</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="phoneNumber"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Phone Number *</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="tel" 
+                              placeholder="Enter 10-digit phone number" 
+                              {...field} 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <Button type="submit" className="w-full" size="lg">
+                      Submit Enquiry
+                    </Button>
+                  </form>
+                </Form>
               </CardContent>
             </Card>
           </div>
