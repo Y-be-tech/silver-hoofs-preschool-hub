@@ -9,23 +9,23 @@ const Home = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Holistic Development",
-      description: "Fostering all-round development through a balanced blend of academics, play, and life skills.",
+      title: "Whole-Child Growth",
+      description: "Where learning, play, and life skills grow together.",
     },
     {
       icon: Users,
-      title: "Expert Educators",
-      description: "Skilled teachers dedicated to nurturing every child's unique potential.",
+      title: "Caring Educators",
+      description: "Teachers who nurture every spark of curiosity.",
     },
     {
       icon: Shield,
-      title: "Safe & Secure",
-      description: "A protected, child-friendly environment ensuring safety and peace of mind.",
+      title: "Safe, Happy Spaces",
+      description: "Because your child's comfort is our first lesson.",
     },
     {
       icon: Sparkles,
-      title: "Innovative Learning",
-      description: "Engaging, modern teaching methods that make learning fun and impactful.",
+      title: "Modern Learning Magic",
+      description: "Smart, creative methods that make education feel like playtime.",
     },
   ];
 
@@ -35,28 +35,28 @@ const Home = () => {
       age: "2-3 Years",
       path: "/services/playgroup",
       color: "bg-primary/10",
-      description: "Sensory play and exploration for toddlers"
+      description: "Tiny explorers begin their journey through colors, textures, and laughter."
     },
     {
       name: "Nursery",
       age: "3-4 Years",
       path: "/services/nursery",
       color: "bg-secondary/10",
-      description: "Building foundations for learning"
+      description: "Early learning comes alive through songs, stories, and sensory fun."
     },
     {
       name: "Junior KG",
       age: "4-5 Years",
       path: "/services/junior-kg",
       color: "bg-accent/10",
-      description: "Academic learning begins"
+      description: "Building confidence through creativity, numbers, and early literacy."
     },
     {
       name: "Senior KG",
       age: "5-6 Years",
       path: "/services/senior-kg",
       color: "bg-primary/10",
-      description: "Complete school readiness preparation"
+      description: "Our little graduates get ready for school life — confident, curious, and kind."
     },
   ];
 
@@ -291,17 +291,17 @@ const Home = () => {
                 <span className="text-primary">Joy</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Welcome to Silver Hoofs Pre-School - nurturing young minds through play, creativity, and love. Beyond the books, we help children discover their potential and build the foundation for a lifetime of learning.
+                Beyond the Books, Into Bright Futures. At Silver Hoofs Pre-School, every child learns through joy, curiosity, and connection — discovering their potential one playful step at a time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
                   <Button size="lg" className="rounded-full w-full sm:w-auto">
-                    Enroll Now
+                    Book a School Tour
                   </Button>
                 </Link>
                 <Link to="/about">
                   <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
-                    Learn More
+                    Meet Our Teachers
                   </Button>
                 </Link>
               </div>
@@ -326,7 +326,7 @@ const Home = () => {
               About Silver Hoofs Pre-School
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Silver Hoofs, we believe that early childhood is the foundation for a lifetime of learning. Our child-centric approach focuses on nurturing the whole child - intellectually, socially, emotionally, and physically. With experienced educators, a warm environment, and a comprehensive curriculum, we create the perfect setting for your child's first educational experience.
+              At Silver Hoofs, we believe childhood should be filled with wonder. Our approach blends play, discovery, and empathy — helping children grow strong minds, kind hearts, and lifelong curiosity. Every moment here is designed to make your child feel seen, safe, and celebrated.
             </p>
             <Link to="/about">
               <Button variant="outline" size="lg" className="rounded-full">
@@ -416,7 +416,7 @@ const Home = () => {
               Our Teaching Philosophy
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              At Silver Hoofs, we embrace a play-based, child-centric philosophy that recognizes each child as a unique individual. We believe that children learn best when they are actively engaged, exploring, and discovering in a supportive environment.
+              Learning at Silver Hoofs is guided by play, powered by curiosity, and grounded in care. We celebrate every "why?", every giggle, every small win — because that's how big learning begins.
             </p>
             <div className="space-y-4 mb-8">
               {whyChooseUs.map((item, index) => (
@@ -448,7 +448,7 @@ const Home = () => {
               Our Learning Spaces
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Thoughtfully designed classrooms that inspire creativity, curiosity, and joyful learning
+              Every corner at Silver Hoofs is designed to spark curiosity and joy — bright classrooms, interactive zones, STEM corners & reading nooks, music and art studios, and safe play areas
             </p>
           </div>
           <ImageMarquee images={classroomImages} direction="left" speed="normal" />
