@@ -485,6 +485,74 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Meet Our Team Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/5 to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Meet Our Team
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Passionate educators dedicated to nurturing young minds and creating a loving, supportive learning environment
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="h-32 w-32 rounded-full bg-primary/10 flex items-center justify-center mx-auto overflow-hidden">
+                  <Users className="h-16 w-16 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground">Ms. Priya Singh</h3>
+                  <p className="text-primary font-medium text-sm mb-2">Head Teacher</p>
+                  <p className="text-muted-foreground text-sm">15 years of experience in early childhood education</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="h-32 w-32 rounded-full bg-secondary/10 flex items-center justify-center mx-auto overflow-hidden">
+                  <Users className="h-16 w-16 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground">Ms. Anjali Sharma</h3>
+                  <p className="text-secondary font-medium text-sm mb-2">Senior Teacher</p>
+                  <p className="text-muted-foreground text-sm">Specializes in creative arts and storytelling</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="h-32 w-32 rounded-full bg-accent/10 flex items-center justify-center mx-auto overflow-hidden">
+                  <Users className="h-16 w-16 text-accent" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground">Ms. Neha Patel</h3>
+                  <p className="text-accent font-medium text-sm mb-2">Nursery Teacher</p>
+                  <p className="text-muted-foreground text-sm">Expert in sensory play and early development</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="h-32 w-32 rounded-full bg-primary/10 flex items-center justify-center mx-auto overflow-hidden">
+                  <Users className="h-16 w-16 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground">Ms. Kavita Reddy</h3>
+                  <p className="text-primary font-medium text-sm mb-2">KG Teacher</p>
+                  <p className="text-muted-foreground text-sm">Passionate about building literacy foundations</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
