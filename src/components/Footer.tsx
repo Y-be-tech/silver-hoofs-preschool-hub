@@ -3,7 +3,7 @@ import logo from "@/assets/silver-hoofs-logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const whatsappNumber = "919980444424";
+  const whatsappNumber = "+919980444424";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about Silver Hoofs Pre-School.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   

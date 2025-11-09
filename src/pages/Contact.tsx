@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
-  const whatsappNumber = "919980444424";
+  const whatsappNumber = "+919980444424";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about admission at Silver Hoofs Pre-School.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 

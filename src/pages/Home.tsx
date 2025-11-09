@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-children.jpg";
 import ImageMarquee from "@/components/ImageMarquee";
 
 const Home = () => {
-  const whatsappNumber = "919980444424";
+  const whatsappNumber = "+919980444424";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to book a school tour at Silver Hoofs Pre-School.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const features = [

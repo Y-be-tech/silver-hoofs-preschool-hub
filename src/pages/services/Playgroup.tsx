@@ -4,7 +4,7 @@ import { Users, Clock, Calendar, CheckCircle, MessageCircle } from "lucide-react
 import playgroupImage from "@/assets/playgroup.jpg";
 
 const Playgroup = () => {
-  const whatsappNumber = "919980444424";
+  const whatsappNumber = "+919980444424";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about the Playgroup program (Ages 2-3).");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const highlights = [

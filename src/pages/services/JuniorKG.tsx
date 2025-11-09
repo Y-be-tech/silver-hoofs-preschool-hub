@@ -4,7 +4,7 @@ import { Users, Clock, Calendar, CheckCircle, MessageCircle } from "lucide-react
 import juniorKgImage from "@/assets/junior-kg.jpg";
 
 const JuniorKG = () => {
-  const whatsappNumber = "919980444424";
+  const whatsappNumber = "+919980444424";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about the Junior KG program (Ages 4-5).");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const highlights = [
