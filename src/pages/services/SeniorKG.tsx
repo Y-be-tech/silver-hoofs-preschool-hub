@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
+import { Users, Clock, Calendar, CheckCircle, MessageCircle } from "lucide-react";
 import seniorKgImage from "@/assets/senior-kg.jpg";
 
 const SeniorKG = () => {
+  const whatsappNumber = "919980444424";
+  const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about the Senior KG program (Ages 5-6).");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const highlights = [
     "Advanced reading and comprehension",
     "Mathematical concepts and operations",
@@ -30,11 +32,12 @@ const SeniorKG = () => {
               <p className="text-lg text-muted-foreground">
                 Senior KG is the final step before primary school! Our comprehensive program ensures children are fully prepared for Grade 1, with strong academic skills, confidence, and a genuine love for learning.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Enquire on WhatsApp
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className="relative">
               <img
@@ -113,11 +116,12 @@ const SeniorKG = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ensure your child transitions confidently to Grade 1 with our comprehensive Senior KG program.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Chat with us on WhatsApp
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

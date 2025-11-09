@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import logo from "@/assets/silver-hoofs-logo.png";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,6 +13,10 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
+  const whatsappNumber = "919980444424";
+  const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about Silver Hoofs Pre-School.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -72,11 +76,12 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link to="/contact">
-              <Button variant="default" className="rounded-full">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button variant="default" className="rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+                <MessageCircle className="mr-2 h-4 w-4" />
                 Contact Us
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -125,15 +130,18 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link
-              to="/contact"
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="block px-4 py-2"
             >
-              <Button variant="default" className="w-full rounded-full">
+              <Button variant="default" className="w-full rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+                <MessageCircle className="mr-2 h-4 w-4" />
                 Contact Us
               </Button>
-            </Link>
+            </a>
           </div>
         )}
       </div>

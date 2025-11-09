@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import logo from "@/assets/silver-hoofs-logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const whatsappNumber = "919980444424";
+  const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about Silver Hoofs Pre-School.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
@@ -30,9 +34,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Contact
-                </Link>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm inline-flex items-center gap-1">
+                  <MessageCircle className="h-3 w-3" />
+                  Contact on WhatsApp
+                </a>
               </li>
             </ul>
           </div>

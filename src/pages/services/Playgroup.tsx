@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
+import { Users, Clock, Calendar, CheckCircle, MessageCircle } from "lucide-react";
 import playgroupImage from "@/assets/playgroup.jpg";
 
 const Playgroup = () => {
+  const whatsappNumber = "919980444424";
+  const whatsappMessage = encodeURIComponent("Hi! I'd like to enquire about the Playgroup program (Ages 2-3).");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const highlights = [
     "Sensory play and exploration",
     "Social interaction and group activities",
@@ -30,11 +32,12 @@ const Playgroup = () => {
               <p className="text-lg text-muted-foreground">
                 Our Playgroup program is designed for toddlers taking their first steps into structured learning. Through play-based activities, we help children develop social skills, confidence, and a love for exploration.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Enquire on WhatsApp
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className="relative">
               <img
@@ -113,11 +116,12 @@ const Playgroup = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Give your toddler a head start with our nurturing and engaging Playgroup program.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="rounded-full bg-[#25D366] hover:bg-[#20BA59] text-white">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Chat with us on WhatsApp
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

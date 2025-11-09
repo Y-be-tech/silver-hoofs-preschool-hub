@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircle, Star, Target, GraduationCap } from "lucide-react";
+import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircle, Star, Target, GraduationCap, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-children.jpg";
 import ImageMarquee from "@/components/ImageMarquee";
 
 const Home = () => {
+  const whatsappNumber = "919980444424";
+  const whatsappMessage = encodeURIComponent("Hi! I'd like to book a school tour at Silver Hoofs Pre-School.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const features = [
     {
       icon: BookOpen,
@@ -294,11 +297,12 @@ const Home = () => {
                 Beyond the Books, Into Bright Futures. At Silver Hoofs Pre-School, every child learns through joy, curiosity, and connection — discovering their potential one playful step at a time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact">
-                  <Button size="lg" className="rounded-full w-full sm:w-auto">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="rounded-full w-full sm:w-auto bg-[#25D366] hover:bg-[#20BA59] text-white">
+                    <MessageCircle className="mr-2 h-5 w-5" />
                     Book a School Tour
                   </Button>
-                </Link>
+                </a>
                 <Link to="/about">
                   <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
                     Meet Our Teachers
@@ -597,11 +601,12 @@ const Home = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join the Silver Hoofs family and give your child the foundation for a lifetime of success. Schedule a visit to see our facilities and meet our teachers.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full text-lg px-8">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="rounded-full text-lg px-8 bg-[#25D366] hover:bg-[#20BA59] text-white">
+              <MessageCircle className="mr-2 h-5 w-5" />
               Schedule a Visit
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>
