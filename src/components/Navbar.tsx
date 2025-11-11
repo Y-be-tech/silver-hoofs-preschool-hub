@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/silver-hoofs-logo.png";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -72,11 +73,7 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link to="/contact">
-              <Button variant="default" className="rounded-full">
-                Contact Us
-              </Button>
-            </Link>
+            <WhatsAppButton className="rounded-full" message="Hello! I would like to know more about admissions at Silver Hoofs.">Chat on WhatsApp</WhatsAppButton>
           </div>
 
           {/* Mobile menu button */}
@@ -125,15 +122,9 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="block px-4 py-2"
-            >
-              <Button variant="default" className="w-full rounded-full">
-                Contact Us
-              </Button>
-            </Link>
+            <div className="px-4 py-2">
+              <WhatsAppButton className="w-full rounded-full" message="Hi! I'd like information about Silver Hoofs programs.">Chat on WhatsApp</WhatsAppButton>
+            </div>
           </div>
         )}
       </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
 import juniorKgImage from "@/assets/junior-kg.jpg";
@@ -30,11 +31,7 @@ const JuniorKG = () => {
               <p className="text-lg text-muted-foreground">
                 Junior KG is where academic learning truly begins! Our program prepares children for formal schooling by developing literacy, numeracy, and critical thinking skills through interactive and hands-on learning experiences.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
-                </Button>
-              </Link>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Junior KG admissions at Silver Hoofs." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -113,11 +110,7 @@ const JuniorKG = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Give your child the academic foundation they need to excel in their educational journey.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
-            </Button>
-          </Link>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Junior KG program at Silver Hoofs." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

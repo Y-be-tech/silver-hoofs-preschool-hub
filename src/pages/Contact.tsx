@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -123,6 +124,7 @@ const Contact = () => {
                     <Button type="submit" className="w-full" size="lg">
                       Submit Enquiry
                     </Button>
+                    <WhatsAppButton size="lg" className="w-full" message="Hello! I'd like to enquire about admissions at Silver Hoofs.">Chat on WhatsApp</WhatsAppButton>
                   </form>
                 </Form>
               </CardContent>
@@ -232,9 +234,10 @@ const Contact = () => {
             <div className="pt-4">
               <Card className="border-2 bg-primary/5">
                 <CardContent className="p-6">
-                  <p className="text-foreground font-medium">
-                    Please contact us to get the phone number and email address for scheduling your visit.
+                  <p className="text-foreground font-medium mb-4">
+                    Prefer quick chat? Reach out instantly on WhatsApp.
                   </p>
+                  <WhatsAppButton variant="secondary" className="rounded-full" message="Hi! I'd like to schedule a school visit to Silver Hoofs.">Message Us on WhatsApp</WhatsAppButton>
                 </CardContent>
               </Card>
             </div>

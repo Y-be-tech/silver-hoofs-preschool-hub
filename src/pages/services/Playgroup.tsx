@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
 import playgroupImage from "@/assets/playgroup.jpg";
@@ -30,11 +31,7 @@ const Playgroup = () => {
               <p className="text-lg text-muted-foreground">
                 Our Playgroup program is designed for toddlers taking their first steps into structured learning. Through play-based activities, we help children develop social skills, confidence, and a love for exploration.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
-                </Button>
-              </Link>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in enrolling my child in Playgroup at Silver Hoofs." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -113,11 +110,7 @@ const Playgroup = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Give your toddler a head start with our nurturing and engaging Playgroup program.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
-            </Button>
-          </Link>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Playgroup program at Silver Hoofs." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

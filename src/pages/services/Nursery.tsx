@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
 import nurseryImage from "@/assets/nursery.jpg";
@@ -30,11 +31,7 @@ const Nursery = () => {
               <p className="text-lg text-muted-foreground">
                 Our Nursery program builds on early learning foundations, introducing children to pre-academic concepts through creative and engaging activities. We focus on developing independence, curiosity, and a love for learning.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
-                </Button>
-              </Link>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Nursery admissions at Silver Hoofs." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -113,11 +110,7 @@ const Nursery = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Help your child develop essential skills in a nurturing and stimulating environment.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
-            </Button>
-          </Link>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Nursery program at Silver Hoofs." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

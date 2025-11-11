@@ -4,6 +4,46 @@
 
 **URL**: https://lovable.dev/projects/73039180-bae0-4342-a305-cb225e004f15
 
+## Local Development (Windows / macOS / Linux)
+
+Prerequisites:
+
+- Node.js 18+ (recommend latest LTS) and npm 9+
+- Git
+
+Optional: Bun is not required. This project will run perfectly with plain npm.
+
+Quick start:
+
+```powershell
+# Clone the repository
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+
+# Install dependencies
+npm install
+
+# Start the dev server (port 8080)
+npm run dev
+
+# Or equivalently
+npm start
+
+# Build for production (output goes to ./dist)
+npm run build
+
+# Preview the production build locally
+npm run preview
+```
+
+Dev server will be available at: http://localhost:8080/
+
+If you need to change the port, edit `server.port` in `vite.config.ts` or run:
+
+```powershell
+npm run dev -- --port 3000
+```
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -20,21 +60,48 @@ If you want to work locally using your own IDE, you can clone this repo and push
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+The steps above already cover cloning and running. Use any IDE (VS Code recommended). ESLint and TypeScript will guide you as you code:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```powershell
+# Lint the project
+npm run lint
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Type check (implicit during build, or run tsc directly)
+npx tsc --noEmit
 ```
+
+### Common Issues
+
+- Port already in use: run `npm run dev -- --port 5173` (or any free port) or stop the other process.
+- Large bundle warning: consider code splitting (dynamic `import()`); see Vite build output suggestions.
+- Fast refresh warnings: These are non-blocking and relate to exporting non-component values in UI files; safe to ignore.
+- WhatsApp buttons not opening: Ensure you created a `.env` file with `VITE_WHATSAPP_NUMBER` (digits only, international format). Example: `VITE_WHATSAPP_NUMBER=919876543210`
+
+### WhatsApp Chat Integration
+
+You can trigger direct WhatsApp chats from CTA buttons. Configure your number:
+
+```powershell
+Copy .env.example .env
+# Edit .env and add your number
+notepad .env
+```
+
+Component: `src/components/WhatsAppButton.tsx`
+
+Usage example:
+
+```tsx
+<WhatsAppButton message="Hi! I'd like to know more about admissions." />
+```
+
+Environment variable: `VITE_WHATSAPP_NUMBER` (must be digits only, no + or spaces). The component falls back to a placeholder if missing.
+
+### Production Build & Deploy
+
+After `npm run build`, deploy the contents of `dist/` to any static host (Netlify, Vercel, GitHub Pages, S3 + CloudFront, etc.).
+
+---
 
 **Edit a file directly in GitHub**
 

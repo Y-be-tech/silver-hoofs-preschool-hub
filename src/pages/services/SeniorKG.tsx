@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Clock, Calendar, CheckCircle } from "lucide-react";
 import seniorKgImage from "@/assets/senior-kg.jpg";
@@ -30,11 +31,7 @@ const SeniorKG = () => {
               <p className="text-lg text-muted-foreground">
                 Senior KG is the final step before primary school! Our comprehensive program ensures children are fully prepared for Grade 1, with strong academic skills, confidence, and a genuine love for learning.
               </p>
-              <Link to="/contact">
-                <Button size="lg" className="rounded-full">
-                  Enroll Now
-                </Button>
-              </Link>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Senior KG admissions at Silver Hoofs." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -113,11 +110,7 @@ const SeniorKG = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ensure your child transitions confidently to Grade 1 with our comprehensive Senior KG program.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full">
-              Contact Us
-            </Button>
-          </Link>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Senior KG program at Silver Hoofs." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

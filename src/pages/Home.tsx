@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircle, Star, Target, GraduationCap } from "lucide-react";
 import heroImage from "@/assets/hero-children.jpg";
 import ImageMarquee from "@/components/ImageMarquee";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Home = () => {
   const features = [
@@ -294,11 +295,8 @@ const Home = () => {
                 Beyond the Books, Into Bright Futures. At Silver Hoofs Pre-School, every child learns through joy, curiosity, and connection — discovering their potential one playful step at a time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact">
-                  <Button size="lg" className="rounded-full w-full sm:w-auto">
-                    Book a School Tour
-                  </Button>
-                </Link>
+                {/* WhatsApp direct chat */}
+                <WhatsAppButton size="lg" className="rounded-full w-full sm:w-auto" message="Hi! I'd like to book a school tour at Silver Hoofs." />
                 <Link to="/about">
                   <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
                     Meet Our Teachers
@@ -529,11 +527,7 @@ const Home = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Join the Silver Hoofs family and give your child the foundation for a lifetime of success. Schedule a visit to see our facilities and meet our teachers.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="rounded-full text-lg px-8">
-              Schedule a Visit
-            </Button>
-          </Link>
+            <WhatsAppButton size="lg" className="rounded-full text-lg px-8" message="Hello! I'd like to schedule a visit to Silver Hoofs." >Schedule a Visit</WhatsAppButton>
         </div>
       </section>
     </div>
