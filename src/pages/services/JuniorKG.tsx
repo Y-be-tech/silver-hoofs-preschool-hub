@@ -31,7 +31,7 @@ const JuniorKG = () => {
               <p className="text-lg text-muted-foreground">
                 Junior KG is where academic learning truly begins! Our program prepares children for formal schooling by developing literacy, numeracy, and critical thinking skills through interactive and hands-on learning experiences.
               </p>
-              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Junior KG admissions at Silver Hoofs." >Enroll Now</WhatsAppButton>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Junior KG admissions at Silver Hoof." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -110,7 +110,7 @@ const JuniorKG = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Give your child the academic foundation they need to excel in their educational journey.
           </p>
-          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Junior KG program at Silver Hoofs." >Contact Us</WhatsAppButton>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Junior KG program at Silver Hoof." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

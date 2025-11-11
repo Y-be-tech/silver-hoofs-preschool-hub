@@ -31,7 +31,7 @@ const Nursery = () => {
               <p className="text-lg text-muted-foreground">
                 Our Nursery program builds on early learning foundations, introducing children to pre-academic concepts through creative and engaging activities. We focus on developing independence, curiosity, and a love for learning.
               </p>
-              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Nursery admissions at Silver Hoofs." >Enroll Now</WhatsAppButton>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in Nursery admissions at Silver Hoof." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -110,7 +110,7 @@ const Nursery = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Help your child develop essential skills in a nurturing and stimulating environment.
           </p>
-          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Nursery program at Silver Hoofs." >Contact Us</WhatsAppButton>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Nursery program at Silver Hoof." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

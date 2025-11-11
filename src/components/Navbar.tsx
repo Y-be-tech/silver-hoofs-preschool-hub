@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Silver Hoofs Logo" className="h-16 w-auto" />
+            <img src={logo} alt="Silver Hoof Logo" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -73,7 +73,7 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <WhatsAppButton className="rounded-full" message="Hello! I would like to know more about admissions at Silver Hoofs.">Chat on WhatsApp</WhatsAppButton>
+            <WhatsAppButton className="rounded-full" message="Hello! I would like to know more about admissions at Silver Hoof.">Chat on WhatsApp</WhatsAppButton>
           </div>
 
           {/* Mobile menu button */}
@@ -123,7 +123,7 @@ const Navbar = () => {
             </Link>
 
             <div className="px-4 py-2">
-              <WhatsAppButton className="w-full rounded-full" message="Hi! I'd like information about Silver Hoofs programs.">Chat on WhatsApp</WhatsAppButton>
+              <WhatsAppButton className="w-full rounded-full" message="Hi! I'd like information about Silver Hoof programs.">Chat on WhatsApp</WhatsAppButton>
             </div>
           </div>
         )}

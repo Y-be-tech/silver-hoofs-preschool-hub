@@ -88,17 +88,17 @@ const Home = () => {
     {
       name: "Priya & Rahul Sharma",
       child: "Aarav (Nursery)",
-      quote: "Silver Hoofs has been amazing for our daughter. The teachers are so caring and the curriculum is perfect for her age. She looks forward to school every single day!"
+  quote: "Silver Hoof has been amazing for our daughter. The teachers are so caring and the curriculum is perfect for her age. She looks forward to school every single day!"
     },
     {
       name: "Anjali & Vikram Patel",
       child: "Diya (Junior KG)",
-      quote: "We are so grateful to have found Silver Hoofs. The individual attention and safe environment give us complete peace of mind. Our son has grown so much!"
+  quote: "We are so grateful to have found Silver Hoof. The individual attention and safe environment give us complete peace of mind. Our son has grown so much!"
     },
     {
       name: "Neha & Arjun Reddy",
       child: "Ishaan (Senior KG)",
-      quote: "The holistic approach at Silver Hoofs is exactly what we were looking for. They focus on academics while nurturing creativity and social skills too."
+  quote: "The holistic approach at Silver Hoof is exactly what we were looking for. They focus on academics while nurturing creativity and social skills too."
     },
   ];
 
@@ -292,11 +292,11 @@ const Home = () => {
                 <span className="text-primary">Joy</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Beyond the Books, Into Bright Futures. At Silver Hoofs Pre-School, every child learns through joy, curiosity, and connection — discovering their potential one playful step at a time.
+                Beyond the Books, Into Bright Futures. At Silver Hoof Pre-School, every child learns through joy, curiosity, and connection — discovering their potential one playful step at a time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* WhatsApp direct chat */}
-                <WhatsAppButton size="lg" className="rounded-full w-full sm:w-auto" message="Hi! I'd like to book a school tour at Silver Hoofs." />
+                <WhatsAppButton size="lg" className="rounded-full w-full sm:w-auto" message="Hi! I'd like to book a school tour at Silver Hoof." />
                 <Link to="/about">
                   <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
                     Meet Our Teachers
@@ -308,7 +308,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
               <img
                 src={heroImage}
-                alt="Happy children learning at Silver Hoofs Pre-School"
+                alt="Happy children learning at Silver Hoof Pre-School"
                 className="relative rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>
@@ -321,10 +321,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              About Silver Hoofs Pre-School
+              About Silver Hoof Pre-School
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Silver Hoofs, we believe childhood should be filled with wonder. Our approach blends play, discovery, and empathy — helping children grow strong minds, kind hearts, and lifelong curiosity. Every moment here is designed to make your child feel seen, safe, and celebrated.
+              At Silver Hoof, we believe childhood should be filled with wonder. Our approach blends play, discovery, and empathy — helping children grow strong minds, kind hearts, and lifelong curiosity. Every moment here is designed to make your child feel seen, safe, and celebrated.
             </p>
             <Link to="/about">
               <Button variant="outline" size="lg" className="rounded-full">
@@ -340,10 +340,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose Silver Hoofs?
+              Why Choose Silver Hoof?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Silver Hoofs stands out as the preferred choice for parents seeking exceptional early education for their little ones
+              Silver Hoof stands out as the preferred choice for parents seeking exceptional early education for their little ones
             </p>
           </div>
 
@@ -414,7 +414,7 @@ const Home = () => {
               Our Teaching Philosophy
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Learning at Silver Hoofs is guided by play, powered by curiosity, and grounded in care. We celebrate every "why?", every giggle, every small win — because that's how big learning begins.
+              Learning at Silver Hoof is guided by play, powered by curiosity, and grounded in care. We celebrate every "why?", every giggle, every small win — because that's how big learning begins.
             </p>
             <div className="space-y-4 mb-8">
               {whyChooseUs.map((item, index) => (
@@ -446,7 +446,7 @@ const Home = () => {
               Our Learning Spaces
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every corner at Silver Hoofs is designed to spark curiosity and joy — bright classrooms, interactive zones, STEM corners & reading nooks, music and art studios, and safe play areas
+              Every corner at Silver Hoof is designed to spark curiosity and joy — bright classrooms, interactive zones, STEM corners & reading nooks, music and art studios, and safe play areas
             </p>
           </div>
           <ImageMarquee images={classroomImages} direction="left" speed="normal" />
@@ -491,7 +491,7 @@ const Home = () => {
               What Parents Say About Us
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Hear from our happy parents about their experience with Silver Hoofs
+              Hear from our happy parents about their experience with Silver Hoof
             </p>
           </div>
 
@@ -525,9 +525,9 @@ const Home = () => {
             Begin Your Child's Learning Journey Today
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join the Silver Hoofs family and give your child the foundation for a lifetime of success. Schedule a visit to see our facilities and meet our teachers.
+            Join the Silver Hoof family and give your child the foundation for a lifetime of success. Schedule a visit to see our facilities and meet our teachers.
           </p>
-            <WhatsAppButton size="lg" className="rounded-full text-lg px-8" message="Hello! I'd like to schedule a visit to Silver Hoofs." >Schedule a Visit</WhatsAppButton>
+            <WhatsAppButton size="lg" className="rounded-full text-lg px-8" message="Hello! I'd like to schedule a visit to Silver Hoof." >Schedule a Visit</WhatsAppButton>
         </div>
       </section>
     </div>

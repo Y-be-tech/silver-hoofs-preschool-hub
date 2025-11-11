@@ -46,7 +46,7 @@ const Contact = () => {
             Get in Touch
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We'd love to hear from you! Visit us or reach out to learn more about Silver Hoofs.
+            We'd love to hear from you! Visit us or reach out to learn more about Silver Hoof.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ const Contact = () => {
                     <Button type="submit" className="w-full" size="lg">
                       Submit Enquiry
                     </Button>
-                    <WhatsAppButton size="lg" className="w-full" message="Hello! I'd like to enquire about admissions at Silver Hoofs.">Chat on WhatsApp</WhatsAppButton>
+                    <WhatsAppButton size="lg" className="w-full" message="Hello! I'd like to enquire about admissions at Silver Hoof.">Chat on WhatsApp</WhatsAppButton>
                   </form>
                 </Form>
               </CardContent>
@@ -202,17 +202,17 @@ const Contact = () => {
                 <div className="bg-muted/30 p-6 border-b">
                   <h2 className="text-2xl font-bold text-foreground mb-2">Visit Us</h2>
                   <p className="text-muted-foreground">
-                    Find us on the map and plan your visit to Silver Hoofs Pre-School
+                    Find us on the map and plan your visit to Silver Hoof Pre-School
                   </p>
                 </div>
                 <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5977885384914!2d72.99394807495855!3d19.168848982056084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f5c7e26a6d%3A0x8a5e8f5c8f5c8f5c!2sSilver%20Hoofs%20Pre%20School!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5977885384914!2d72.99394807495855!3d19.168848982056084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f5c7e26a6d%3A0x8a5e8f5c8f5c8f5c!2sSilver%20Hoof%20Pre%20School!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                     className="absolute top-0 left-0 w-full h-full border-0"
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Silver Hoofs Pre-School Location"
+                    title="Silver Hoof Pre-School Location"
                   />
                 </div>
               </CardContent>
@@ -229,7 +229,7 @@ const Contact = () => {
               Schedule a Visit
             </h2>
             <p className="text-lg text-muted-foreground">
-              We welcome you to visit our campus, meet our teachers, and see our facilities firsthand. Contact us today to schedule a tour and learn more about how Silver Hoofs can be the perfect start to your child's educational journey.
+              We welcome you to visit our campus, meet our teachers, and see our facilities firsthand. Contact us today to schedule a tour and learn more about how Silver Hoof can be the perfect start to your child's educational journey.
             </p>
             <div className="pt-4">
               <Card className="border-2 bg-primary/5">
@@ -237,7 +237,7 @@ const Contact = () => {
                   <p className="text-foreground font-medium mb-4">
                     Prefer quick chat? Reach out instantly on WhatsApp.
                   </p>
-                  <WhatsAppButton variant="secondary" className="rounded-full" message="Hi! I'd like to schedule a school visit to Silver Hoofs.">Message Us on WhatsApp</WhatsAppButton>
+                  <WhatsAppButton variant="secondary" className="rounded-full" message="Hi! I'd like to schedule a school visit to Silver Hoof.">Message Us on WhatsApp</WhatsAppButton>
                 </CardContent>
               </Card>
             </div>

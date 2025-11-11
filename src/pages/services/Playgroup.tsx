@@ -31,7 +31,7 @@ const Playgroup = () => {
               <p className="text-lg text-muted-foreground">
                 Our Playgroup program is designed for toddlers taking their first steps into structured learning. Through play-based activities, we help children develop social skills, confidence, and a love for exploration.
               </p>
-              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in enrolling my child in Playgroup at Silver Hoofs." >Enroll Now</WhatsAppButton>
+              <WhatsAppButton size="lg" className="rounded-full" message="Hi! I'm interested in enrolling my child in Playgroup at Silver Hoof." >Enroll Now</WhatsAppButton>
             </div>
             <div className="relative">
               <img
@@ -110,7 +110,7 @@ const Playgroup = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Give your toddler a head start with our nurturing and engaging Playgroup program.
           </p>
-          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Playgroup program at Silver Hoofs." >Contact Us</WhatsAppButton>
+          <WhatsAppButton size="lg" className="rounded-full" message="Hello! I'd like more details about the Playgroup program at Silver Hoof." >Contact Us</WhatsAppButton>
         </div>
       </section>
     </div>

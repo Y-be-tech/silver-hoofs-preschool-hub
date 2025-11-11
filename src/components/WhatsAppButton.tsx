@@ -12,7 +12,7 @@ export interface WhatsAppButtonProps extends React.ComponentProps<typeof Button>
 }
 
 export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
-  message = "Hello! I'd like to know more about Silver Hoofs Pre-School.",
+  message = "Hello! I'd like to know more about Silver Hoof Pre-School.",
   phoneOverride,
   openInNewTab = true,
   className,
