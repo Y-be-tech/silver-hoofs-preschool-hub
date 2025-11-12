@@ -14,6 +14,6 @@ Allow: /
 # Block common irrelevant paths (none currently, placeholder)
 # Disallow: /admin
 
-# Point to sitemap
-# Replace with your production domain, or keep relative path if unknown
-Sitemap: /sitemap.xml
+# Point to sitemaps on both domains (search engines accept multiple entries)
+Sitemap: https://www.silverhoofacademy.com/sitemap.xml
+Sitemap: https://www.silverhoofacademy.in/sitemap.xml
