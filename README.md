@@ -77,6 +77,27 @@ npx tsc --noEmit
 - Fast refresh warnings: These are non-blocking and relate to exporting non-component values in UI files; safe to ignore.
 - WhatsApp buttons not opening: Ensure you created a `.env` file with `VITE_WHATSAPP_NUMBER` (digits only, international format). Example: `VITE_WHATSAPP_NUMBER=919876543210`
 
+### SEO: Sitemap & Robots
+
+This project ships a sitemap and robots.txt to help Google index your SPA routes.
+
+- During development, a default sitemap is available at `/sitemap.xml` (points to `http://localhost:8080`).
+- On production build, a sitemap is generated automatically using the `SITE_URL` (or `VITE_SITE_URL`) environment variable.
+
+Set your site URL and build:
+
+```powershell
+$env:SITE_URL = "https://your-domain.com"
+npm run build
+```
+
+Artifacts:
+
+- `dist/sitemap.xml` — Generated from known routes
+- `public/robots.txt` — References `/sitemap.xml`
+
+If hosting under a subpath (e.g., GitHub Pages), set `SITE_URL` accordingly, e.g. `https://user.github.io/repo`.
+
 ### WhatsApp Chat Integration
 
 You can trigger direct WhatsApp chats from CTA buttons. Configure your number:

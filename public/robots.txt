@@ -1,14 +1,19 @@
+User-agent: *
+Allow: /
+
+# Explicitly allow major crawlers (redundant but clear)
 User-agent: Googlebot
 Allow: /
-
 User-agent: Bingbot
 Allow: /
-
 User-agent: Twitterbot
 Allow: /
-
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Block common irrelevant paths (none currently, placeholder)
+# Disallow: /admin
+
+# Point to sitemap
+# Replace with your production domain, or keep relative path if unknown
+Sitemap: /sitemap.xml
