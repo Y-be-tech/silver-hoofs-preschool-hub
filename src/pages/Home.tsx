@@ -316,6 +316,27 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Facebook Page Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Connect With Us
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Follow our journey and stay updated with daily activities, events, and learning moments
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="fb-page" data-href="https://www.facebook.com/KidzeeKasavanahalli/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/KidzeeKasavanahalli/" className="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/KidzeeKasavanahalli/">Kidzee Kasavanahalli</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Preview Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
