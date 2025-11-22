@@ -5,7 +5,6 @@ import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircl
 import heroImage from "@/assets/hero-children.jpg";
 import ImageMarquee from "@/components/ImageMarquee";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import FacebookPagePlugin from "@/components/FacebookPagePlugin";
 
 const Home = () => {
   const features = [
@@ -313,23 +312,6 @@ const Home = () => {
                 className="relative rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Facebook Page Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Connect With Us
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Follow our journey and stay updated with daily activities, events, and learning moments
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <FacebookPagePlugin pageUrl="https://www.facebook.com/KidzeeKasavanahalli/" width={500} />
           </div>
         </div>
       </section>

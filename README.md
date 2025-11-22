@@ -98,17 +98,6 @@ Artifacts:
 
 If hosting under a subpath (e.g., GitHub Pages), set `SITE_URL` accordingly, e.g. `https://user.github.io/repo`.
 
-Multiple domains
-
-If your site is served from more than one domain, set them as a comma-separated list. The first will be treated as primary, `dist/sitemap.xml` will use it, and additional domain-specific sitemaps plus `sitemap-index.xml` will be generated.
-
-```powershell
-$env:SITE_URLS = "https://www.silverhoofacademy.com, https://www.silverhoofacademy.in"
-npm run build
-```
-
-Robots.txt already references both domain sitemaps.
-
 ### WhatsApp Chat Integration
 
 You can trigger direct WhatsApp chats from CTA buttons. Configure your number:
