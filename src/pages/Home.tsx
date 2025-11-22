@@ -5,6 +5,7 @@ import { BookOpen, Users, Heart, Sparkles, ArrowRight, Shield, Award, CheckCircl
 import heroImage from "@/assets/hero-children.jpg";
 import ImageMarquee from "@/components/ImageMarquee";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FacebookPagePlugin from "@/components/FacebookPagePlugin";
 
 const Home = () => {
   const features = [
@@ -328,11 +329,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="fb-page" data-href="https://www.facebook.com/KidzeeKasavanahalli/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/KidzeeKasavanahalli/" className="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/KidzeeKasavanahalli/">Kidzee Kasavanahalli</a>
-              </blockquote>
-            </div>
+            <FacebookPagePlugin pageUrl="https://www.facebook.com/KidzeeKasavanahalli/" width={500} />
           </div>
         </div>
       </section>
